@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozetka</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body class="page">
+    <header class="page__header header">
+        <div class="header__burger">
+            <button type="button" class="button header__burgerButton fn-header__burgerButton_open">
+                <div class="button__lineBurger"></div>
+                <div class="button__lineBurger"></div>
+                <div class="button__lineBurger"></div>
+            </button>
+        </div>
+
+        <div class="header__logo">
+            <div class="header__logoWrapper">
+                <a class="logo" href="#">
+                    <img class="logo__fullLogo" src="img/fullLogo.svg">
+                    <img class="logo__logoIcon" src="img/logoIcon.svg">
+                </a>
+            </div>
+        </div>
+
+        <div class="header__catalog">
+            <button type="button" class="button button__withText button__withText_catalog">Каталог</button>
+        </div>
+
+        <div class="header__search">
+            <div class="input header__input">
+                <input class="input__field">
+                <button class="button button__withIcon"></button>
+                <button class="button button__withText"></button>
+            </div>
+        </div>
+
+        <div class="header__actions">
+            <ul class="actionsItemsRow header__actionsItems">
+                <li class="actionsItemsRow__item actionsItemsRow__item_leng">
+                    <button class="button button__withText button__ua">UA</button>
+                    <button class="button button__withText button__ru button__lang_active">RU</button>
+                </li>
+                <li class="actionsItemsRow__item">
+                    <button class="button button__withText button__withText_premium">
+                        <span class="button__text button__text_Try">Попробуйте</span>
+                        <span class="button__text button__text_Premium">PREMIUM</span>
+                    </button>
+                </li>
+                <li class="actionsItemsRow__item actionsItemsRow__item_user">
+                    <button class="button button__withIcon button__withIcon_user"></button>
+                </li>
+                <li class="actionsItemsRow__item actionsItemsRow__item_cart">
+                    <button class="button button__withIcon button__withIcon_cart"></button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <script src="index.js"></script>
+</body>
+</html>
