@@ -8,56 +8,400 @@
 </head>
 <body class="page">
     <header class="page__header header">
-        <div class="header__burger">
-            <button type="button" class="button header__burgerButton fn-header__burgerButton_open">
-                <div class="button__lineBurger"></div>
-                <div class="button__lineBurger"></div>
-                <div class="button__lineBurger"></div>
-            </button>
-        </div>
-
-        <div class="header__logo">
-            <div class="header__logoWrapper">
-                <a class="logo" href="#">
-                    <img class="logo__fullLogo" src="img/fullLogo.svg">
-                    <img class="logo__logoIcon" src="img/logoIcon.svg">
-                </a>
+        <div class="header__wrapper">
+            <div class="header__burger">
+                <button type="button" class="header__burgerButton fn-header__burgerButton_open">
+                    <div class="button__lineBurger"></div>
+                    <div class="button__lineBurger"></div>
+                    <div class="button__lineBurger"></div>
+                </button>
             </div>
-        </div>
 
-        <div class="header__catalog">
-            <button type="button" class="button button__withText button__withText_catalog">Каталог</button>
-        </div>
-
-        <div class="header__search">
-            <div class="input header__input">
-                <input class="input__field" placeholder="Я ищу...">
-                <button class="button button__withIcon button__withIcon_microphone"></button>
-                <button class="button button__withText button__withText_search">Найти</button>
+            <div class="header__logo">
+                <div class="header__logoWrapper">
+                    <a class="logo" href="#">
+                        <img class="logo__fullLogo" src="img/fullLogo.svg">
+                        <img class="logo__logoIcon" src="img/logoIcon.svg">
+                    </a>
+                </div>
             </div>
-        </div>
 
-        <div class="header__actions">
-            <ul class="actionsItemsRow header__actionsItems">
-                <li class="actionsItemsRow__item actionsItemsRow__item_leng">
-                    <button class="button button__withText button__ua">UA</button>
-                    <button class="button button__withText button__ru button__lang_active">RU</button>
-                </li>
-                <li class="actionsItemsRow__item actionsItemsRow__item_premium">
-                    <button class="button button__withText button__withText_premium">
-                        <span class="button__text button__text_Try">Попробуйте</span>
-                        <span class="button__text button__text_Premium">PREMIUM</span>
-                    </button>
-                </li>
-                <li class="actionsItemsRow__item actionsItemsRow__item_user">
-                    <button class="button button__withIcon button__withIcon_user"></button>
-                </li>
-                <li class="actionsItemsRow__item actionsItemsRow__item_cart">
-                    <button class="button button__withIcon button__withIcon_cart"></button>
-                </li>
-            </ul>
+            <div class="header__catalog">
+                <button type="button" class="button button__rectangle button__withText_catalog">Каталог</button>
+            </div>
+
+            <div class="header__search">
+                <div class="input header__input">
+                    <input class="input__field" placeholder="Я ищу...">
+                    <button class="button button__withIcon_microphone"></button>
+                    <button class="button button__rectangle button__rectangle_search">Найти</button>
+                </div>
+            </div>
+
+            <div class="header__actions">
+                <ul class="actionsItemsRow header__actionsItems">
+                    <li class="actionsItemsRow__item actionsItemsRow__item_leng">
+                        <button class="button button__withText button__ua">UA</button>
+                        <button class="button button__withText button__ru button__lang_active">RU</button>
+                    </li>
+                    <li class="actionsItemsRow__item actionsItemsRow__item_premium">
+                        <button class="button button__withText button__withText_premium">
+                            <span class="button__text button__text_Try">Попробуйте</span>
+                            <span class="button__text button__text_Premium">PREMIUM</span>
+                        </button>
+                    </li>
+                    <li class="actionsItemsRow__item actionsItemsRow__item_user">
+                        <button class="button button__withIcon button__withIcon_user"></button>
+                    </li>
+                    <li class="actionsItemsRow__item actionsItemsRow__item_cart">
+                        <button class="button button__withIcon button__withIcon_cart"></button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
+
+    <div class="asideMenu page__asideMenu asideMenu__overlay">
+        <div class="asideMenu__body">
+
+            <div class="asideMenu__header">
+                <a class="logo" href="#">
+                    <img class="asideMenu__logo" src="img/fullLogo.svg">
+                </a>
+                <button class="button button__radio fn-button__radio_close">
+                    <img class="button__radio_close" src="img/close.png">
+                </button>
+            </div>
+
+            <div class="asideMenu__main">
+
+                <div class="asideMenu__authorization">
+                    <div class="button button__radio">
+                        <img class="button__radio_user" src="img/user.png">
+                    </div>
+                    <div class="asideMenu__authorizationLinks">
+                        <div class="aaa">
+                            <a class="link link_logIn" href="#">Вход</a>
+                            <a class="link link_registration" href="#">Регистрация</a>
+                        </div>
+                        <p class="paragraph paragraph__item_description" href="#">Авторизуйтесь для получения расширенных возможностей</p>
+                    </div>
+                </div>
+
+                <div class="asideMenu__premium">
+                    <div class="asideMenu__premium__body">
+                        <span class="asideMenu__premium__label">PREMIUM</span>
+                        <span class="asideMenu__premium__caption">Бесплатная доставка весь год</span>
+                    </div>
+                </div>
+
+                <div class="asideMenu__lists">
+
+                    <ul class="actionsItemsColumn actionsItemsColumn__border_bottom asideMenu__actionsItems">
+                        <li class="actionsItemsColumn__item actionsItemsColumn__item_button">
+                            <button class="button button__position_left">
+                                <div class="button button__radio button__radio_color_grey">
+                                    <img class="button__radio_okIcon" src="img/ok.png">
+                                </div>
+                                <p class="paragraph paragraph__item paragraph__item_size_l">Каталог товаров</p>
+                            </button>
+                        </li>
+                        <li class="actionsItemsColumn__item actionsItemsColumn__item_button">
+                            <button class="button button__position_left">
+                                <div class="button button__radio button__radio_color_grey">
+                                    <img class="button__radio_okIcon" src="img/ok.png">
+                                </div>
+                                <p class="paragraph paragraph__item paragraph__item_size_l">Корзина</p>
+                            </button>
+                        </li>
+                        <li class="actionsItemsColumn__item actionsItemsColumn__item_button">
+                            <button class="button button__position_left">
+                                <div class="button button__radio button__radio_color_grey">
+                                    <img class="button__radio_okIcon" src="img/ok.png">
+                                </div>
+                                <p class="paragraph paragraph__item paragraph__item_size_l">Справочный центр</p>
+                            </button>
+                        </li>
+                        <li class="actionsItemsColumn__item actionsItemsColumn__item_button">
+                            <button class="button button__position_left">
+                                <div class="button button__radio button__radio_color_grey">
+                                    <img class="button__radio_okIcon" src="img/ok.png">
+                                </div>
+                                <p class="paragraph paragraph__item paragraph__item_size_l">+38 044 537-02-22</p>
+                            </button>
+                        </li>
+                    </ul>
+
+                    <ul class="actionsItemsColumn actionsItemsColumn__border_bottom asideMenu__actionsItems">
+                        <li class="actionsItemsColumn__item actionsItemsColumn__item_leng">
+                            <p class="paragraph paragraph__title">Язык</p>
+                            <ul class="actionsItemsRow actionsItemsColumn__actionsItems">
+                                <li class="actionsItemsRow__item actionsItemsRow__item_leng">
+                                    <button class="button button__ua">UA</button>
+                                    <button class="button button__ru">RU</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="city actionsItemsColumn__item actionsItemsColumn__item_city">
+                            <p class="paragraph paragraph__title">Город</p>
+                            <select class="city__list">
+                                <option selected>Киев</option>
+                                <option>Днепр</option>
+                                <option>Харьков</option>
+                                <option>Львов</option>
+                            </select>
+                        </li>
+                    </ul>
+
+                    <ul class="actionsItemsColumn actionsItemsColumn__border_bottom asideMenu__actionsItems">
+                        <li class="actionsItemsColumn__item">
+                            <p class="paragraph paragraph__title">Информация о компании</p>
+                        </li>
+                        <li class="actionsItemsColumn__item">
+                            <a class="link paragraph paragraph__item" href="#">О нас</a>
+                        </li>
+                        <li class="actionsItemsColumn__item">
+                            <a class="link paragraph paragraph__item" href="#">Условия использования сайта</a>
+                        </li>
+                        <li class="actionsItemsColumn__item">
+                            <a class="link paragraph paragraph__item" href="#">Вакансии</a>
+                        </li>
+                        <li class="actionsItemsColumn__item">
+                            <a class="link paragraph paragraph__item" href="#">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <ul class="actionsItemsColumn actionsItemsColumn__border_bottom asideMenu__actionsItems">
+                        <li class="actionsItemsColumn__item">
+                            <p class="paragraph paragraph__title">Помощь</p>
+                        </li>
+                        <li class="actionsItemsColumn__item">
+                            <a class="link paragraph paragraph__item" href="#">Доставка и оплата</a>
+                        </li>
+                        <li class="actionsItemsColumn__item">
+                            <a class="link paragraph paragraph__item" href="#">Кредит</a>
+                        </li>
+                        <li class="actionsItemsColumn__item">
+                            <a class="link paragraph paragraph__item" href="#">Гарантия</a>
+                        </li>
+                        <li class="actionsItemsColumn__item">
+                            <a class="link paragraph paragraph__item" href="#">Возврат товара</a>
+                        </li>
+                        <li class="actionsItemsColumn__item">
+                            <a class="link paragraph paragraph__item" href="#">Сервисные центры</a>
+                        </li>
+                    </ul>
+
+                    <ul class="actionsItemsColumn actionsItemsColumn__border_bottom asideMenu__actionsItems">
+                        <li class="actionsItemsColumn__item">
+                            <p class="paragraph paragraph__title">Сервисы</p>
+                        </li>
+                    </ul>
+
+                    <ul class="actionsItemsColumn actionsItemsColumn__border_bottom asideMenu__actionsItems">
+                        <li class="actionsItemsColumn__item">
+                            <p class="paragraph paragraph__title">Партнерам</p>
+                        </li>
+                    </ul>
+
+                    <ul class="actionsItemsColumn actionsItemsColumn__border_bottom ">
+                        <li class="actionsItemsColumn__item">
+                            <p class="paragraph paragraph__title">Скачивайте наши приложения</p>
+                        </li>
+                        <li class="actionsItemsColumn__item actionsItemsColumn__item_payments">
+                            <a class="actionsItemsColumn__item_store" href="#"><img src="img/playstore.png"></a>
+                            <a class="actionsItemsColumn__item_store" href="#"><img src="img/appstore.png"></a>
+                        </li>
+                    </ul>
+
+                    <ul class="actionsItemsColumn asideMenu__actionsItems">
+                        <li class="actionsItemsColumn__item">
+                            <p class="paragraph paragraph__title">Мы в социальных сетях</p>
+                        </li>
+                        <li class="actionsItemsColumn__item actionsItemsColumn__item_social">
+                            <a class="button button__radio" href="#"><img src="img/logoIcon.svg"></a>
+                            <a class="button button__radio" href="#"><img src="img/logoIcon.svg"></a>
+                            <a class="button button__radio" href="#"><img src="img/logoIcon.svg"></a>
+                            <a class="button button__radio" href="#"><img src="img/logoIcon.svg"></a>
+                            <a class="button button__radio" href="#"><img src="img/logoIcon.svg"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page__mainContainer">
+        <div class="sidebarMenu page__sidebarMenu">
+            <div class="sidebarMenu__lists">
+
+                <ul class="actionsItemsColumn actionsItemsColumn__border_bottom sidebarMenu__actionsItems">
+                    <li class="linkWithIcon ">
+                        <img class="linkWithIcon__icon" src="img/ok.png">
+                        <a class="link linkWithIcon__link" href="#">Ноутбуки и компьютеры</a>
+                    </li>
+                    <li class="linkWithIcon actionsItemsColumn__item">
+                        <img class="linkWithIcon__icon" src="img/ok.png">
+                        <a class="link linkWithIcon__link" href="#">Смартфоны, ТВ и электроника</a>
+                    </li>
+                    <li class="linkWithIcon actionsItemsColumn__item">
+                        <img class="linkWithIcon__icon" src="img/ok.png">
+                        <a class="link linkWithIcon__link" href="#">Товары для геймеров</a>
+                    </li>
+                    <li class="linkWithIcon actionsItemsColumn__item">
+                        <img class="linkWithIcon__icon" src="img/ok.png">
+                        <a class="link linkWithIcon__link" href="#">Бытовая техника</a>
+                    </li>
+                    <li class="linkWithIcon actionsItemsColumn__item">
+                        <img class="linkWithIcon__icon" src="img/ok.png">
+                        <a class="link linkWithIcon__link" href="#">Товары для дома</a>
+                    </li>
+                    <li class="linkWithIcon ">
+                        <img class="linkWithIcon__icon" src="img/ok.png">
+                        <a class="link linkWithIcon__link" href="#">Инструменты и автотовары</a>
+                    </li>
+                    <li class="linkWithIcon actionsItemsColumn__item">
+                        <img class="linkWithIcon__icon" src="img/ok.png">
+                        <a class="link linkWithIcon__link" href="#">Сантехника и ремонт</a>
+                    </li>
+                    <li class="linkWithIcon actionsItemsColumn__item">
+                        <img class="linkWithIcon__icon" src="img/ok.png">
+                        <a class="link linkWithIcon__link" href="#">Дача, сад и огород</a>
+                    </li>
+                    <li class="linkWithIcon actionsItemsColumn__item">
+                        <img class="linkWithIcon__icon" src="img/ok.png">
+                        <a class="link linkWithIcon__link" href="#">Спорт и увлечения</a>
+                    </li>
+                    <li class="linkWithIcon actionsItemsColumn__item">
+                        <img class="linkWithIcon__icon" src="img/ok.png">
+                        <a class="link linkWithIcon__link" href="#">Одежда, обувь и украшения</a>
+                    </li>
+                    <li class="linkWithIcon ">
+                        <img class="linkWithIcon__icon" src="img/ok.png">
+                        <a class="link linkWithIcon__link" href="#">Красота и здоровье</a>
+                    </li>
+                    <li class="linkWithIcon actionsItemsColumn__item">
+                        <img class="linkWithIcon__icon" src="img/ok.png">
+                        <a class="link linkWithIcon__link" href="#">Детские товары</a>
+                    </li>
+                    <li class="linkWithIcon actionsItemsColumn__item">
+                        <img class="linkWithIcon__icon" src="img/ok.png">
+                        <a class="link linkWithIcon__link" href="#">Зоотовары</a>
+                    </li>
+                    <li class="linkWithIcon actionsItemsColumn__item">
+                        <img class="linkWithIcon__icon" src="img/ok.png">
+                        <a class="link linkWithIcon__link" href="#">Канцтовары и книги</a>
+                    </li>
+                    <li class="linkWithIcon actionsItemsColumn__item">
+                        <img class="linkWithIcon__icon" src="img/ok.png">
+                        <a class="link linkWithIcon__link" href="#">Алкогольные напитки и продукты</a>
+                    </li>
+                </ul>
+
+                <ul class="actionsItemsColumn actionsItemsColumn__border_bottom sidebarMenu__actionsItems">
+                    <li class="linkWithIcon actionsItemsColumn__item">
+                        <img class="linkWithIcon__icon" src="img/ok.png">
+                        <a class="link linkWithIcon__link" href="#">Справочный центр</a>
+                    </li>
+                </ul>
+
+                <ul class="actionsItemsColumn actionsItemsColumn__border_bottom sidebarMenu__actionsItems">
+                    <li class="welcomeBanner actionsItemsColumn__item">
+                        <p class="paragraph paragraph__title_main">Добро пожаловать!</p>
+                        <p class="paragraph paragraph__item_description_center paragraph__title">Войдите, чтобы получать рекомендации, персональные бонусы и скидки.</p>
+                        <button class="button button__rectangle">
+                            <span class="">Войдите в личный кабинет</span>
+                        </button>
+                    </li>
+                </ul>
+
+                <ul class="actionsItemsColumn actionsItemsColumn__border_bottom sidebarMenu__actionsItems">
+                    <li class="actionsItemsColumn__item">
+                        <p class="paragraph paragraph__title">Скачивайте наши приложения</p>
+                    </li>
+                    <li class="actionsItemsColumn__item actionsItemsColumn__item_payments">
+                        <a class="actionsItemsColumn__item_store" href="#"><img src="img/playstore.png"></a>
+                        <a class="actionsItemsColumn__item_store" href="#"><img src="img/appstore.png"></a>
+                    </li>
+                </ul>
+
+                <ul class="actionsItemsColumn actionsItemsColumn__border_bottom sidebarMenu__actionsItems">
+                    <li class="actionsItemsColumn__item">
+                        <p class="paragraph paragraph__title">Мы в социальных сетях</p>
+                    </li>
+                    <li class="actionsItemsColumn__item actionsItemsColumn__item_social">
+                        <a class="button button__radio" href="#"><img src="img/logoIcon.svg"></a>
+                        <a class="button button__radio" href="#"><img src="img/logoIcon.svg"></a>
+                        <a class="button button__radio" href="#"><img src="img/logoIcon.svg"></a>
+                        <a class="button button__radio" href="#"><img src="img/logoIcon.svg"></a>
+                        <a class="button button__radio" href="#"><img src="img/logoIcon.svg"></a>
+                    </li>
+                </ul>
+
+                <ul class="actionsItemsColumn actionsItemsColumn__border_bottom sidebarMenu__actionsItems">
+                    <li class="actionsItemsColumn__item">
+                        <p class="paragraph paragraph__title">Информация о компании</p>
+                    </li>
+                    <li class="actionsItemsColumn__item">
+                        <a class="link paragraph paragraph__item" href="#">О нас</a>
+                    </li>
+                    <li class="actionsItemsColumn__item">
+                        <a class="link paragraph paragraph__item" href="#">Условия использования сайта</a>
+                    </li>
+                    <li class="actionsItemsColumn__item">
+                        <a class="link paragraph paragraph__item" href="#">Вакансии</a>
+                    </li>
+                    <li class="actionsItemsColumn__item">
+                        <a class="link paragraph paragraph__item" href="#">Контакты</a>
+                    </li>
+                </ul>
+
+                <ul class="actionsItemsColumn actionsItemsColumn__border_bottom sidebarMenu__actionsItems">
+                    <li class="actionsItemsColumn__item">
+                        <p class="paragraph paragraph__title">Помощь</p>
+                    </li>
+                    <li class="actionsItemsColumn__item">
+                        <a class="link paragraph paragraph__item" href="#">Доставка и оплата</a>
+                    </li>
+                    <li class="actionsItemsColumn__item">
+                        <a class="link paragraph paragraph__item" href="#">Кредит</a>
+                    </li>
+                    <li class="actionsItemsColumn__item">
+                        <a class="link paragraph paragraph__item" href="#">Гарантия</a>
+                    </li>
+                    <li class="actionsItemsColumn__item">
+                        <a class="link paragraph paragraph__item" href="#">Возврат товара</a>
+                    </li>
+                    <li class="actionsItemsColumn__item">
+                        <a class="link paragraph paragraph__item" href="#">Сервисные центры</a>
+                    </li>
+                </ul>
+
+                <ul class="actionsItemsColumn sidebarMenu__actionsItems">
+                    <li class="actionsItemsColumn__item actionsItemsColumn__item_paymentsIcons">
+                        <a href="#"><img src="img/mastercard-logo.svg"></a>
+                        <a href="#"><img src="img/visa-logo.svg"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contentContainer page__contentContainer">
+            <div class="slider contentContainer__slider">
+                <button class="button button__rectangle button__rectangle_next">&#10097;</button>
+                <button class="button button__rectangle button__rectangle_prev">&#10096;</button>
+                <ul class="slider__items">
+                    <li class="slider__item">
+                        <img class="slider__img" src="img/slide1.jpg">
+                    </li>
+                </ul>
+                <button class="button button__rectangle button__paginationLink">
+                    <span class="">Все акции</span>
+                </button>
+            </div>
+            <div class="contentContainer__section"></div>
+        </div>
+    </div>
 
     <script src="index.js"></script>
 </body>
